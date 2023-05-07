@@ -1,5 +1,5 @@
 OUT=rewind-2440
-OBJS=start.o main.o
+OBJS=start.o main.o uart0.o
 # toolchain configs
 TOOLCHAIN_PREFIX=arm-daren-eabi
 TOOLCHAIN_HOME=/Volumes/Workspace/__Resources/cross-toolchains/$(TOOLCHAIN_PREFIX)/bin

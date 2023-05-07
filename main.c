@@ -1,4 +1,5 @@
-#include "s3c2440.h"
+#include "uart0.h"
 int main() {
+    puts("helloworld");
     return 0;
 }

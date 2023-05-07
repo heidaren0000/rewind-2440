@@ -14,12 +14,7 @@ _start:
     ldr r0, =0x4C000004     @ MPLL control register
     ldr r1, =(0x7f << 12)|(2 << 4)|1
     str r1, [r0]
-    @ init uart
-    ldr r0, =0x56000070 @ gpio h control register
-    ldr r1, =(2 << 4)|(2 << 6)
-    str r1, [r0]
-    ldr r0, =0x50000000
-    ldr r1, =3
+
     @ init sdram
 
     @ init stack pointer, auto adjust norflash and nand flash
